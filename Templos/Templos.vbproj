@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76077DB3-10D2-4AE1-8F44-4442FE023FCB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Templos.My.MyApplication</StartupObject>
+    <RootNamespace>Templos</RootNamespace>
+    <AssemblyName>Templos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>ftp://192.185.208.241/www/projetos/templos/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.enxovaismuriae.com.br/projetos/templos/</InstallUrl>
+    <ProductName>Templos</ProductName>
+    <PublisherName>Nelson A. Sousa</PublisherName>
+    <SuiteName>Methodus Templos</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>instala.htm</WebPage>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>31</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Templos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Templos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SGT.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B959DFDBF07756250BC7DB3C62198983CD1BACC8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Templos_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Utils.Zip">
+      <HintPath>..\..\..\..\Arquivo\DLLs\Ionic.Utils.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\CS\GERENTE\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\CS\GERENTE\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.DataVisualization.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\CS\GERENTE\GERENTE\bin\Debug\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.11.0.2\lib\net20\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CA\Formularios\Frm_Agenda.designer.vb">
+      <DependentUpon>Frm_Agenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Agenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Aniversariantes.designer.vb">
+      <DependentUpon>Frm_Aniversariantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Aniversariantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Bkp.designer.vb">
+      <DependentUpon>Frm_Bkp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Bkp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Classes.designer.vb">
+      <DependentUpon>Frm_Classes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Classes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Controle_Atas.designer.vb">
+      <DependentUpon>Frm_Controle_Atas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Controle_Atas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Dizimos.designer.vb">
+      <DependentUpon>Frm_Dizimos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Dizimos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Empresta_Livro.designer.vb">
+      <DependentUpon>Frm_Empresta_Livro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Empresta_Livro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Escola_Dominical.designer.vb">
+      <DependentUpon>Frm_Escola_Dominical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Escola_Dominical.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Eventos.designer.vb">
+      <DependentUpon>Frm_Eventos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Eventos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Financeiro.designer.vb">
+      <DependentUpon>Frm_Financeiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Financeiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Fluxo_Caixa.designer.vb">
+      <DependentUpon>Frm_Fluxo_Caixa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Fluxo_Caixa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Fornecedores.designer.vb">
+      <DependentUpon>Frm_Fornecedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Fornecedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Hinario.designer.vb">
+      <DependentUpon>Frm_Hinario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Hinario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Lista_Fluxo_Caixa.designer.vb">
+      <DependentUpon>Frm_Lista_Fluxo_Caixa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Lista_Fluxo_Caixa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Lista_Membros.designer.vb">
+      <DependentUpon>Frm_Lista_Membros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Lista_Membros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Lista_Presencas.designer.vb">
+      <DependentUpon>Frm_Lista_Presencas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Lista_Presencas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Livros.designer.vb">
+      <DependentUpon>Frm_Livros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Livros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Localizar.designer.vb">
+      <DependentUpon>Frm_Localizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Localizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Localiza_Pais.designer.vb">
+      <DependentUpon>Frm_Localiza_Pais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Localiza_Pais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Login.designer.vb">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Membros.designer.vb">
+      <DependentUpon>Frm_Membros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Membros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Muda_Classe.designer.vb">
+      <DependentUpon>Frm_Muda_Classe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Muda_Classe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Ocorrencias.designer.vb">
+      <DependentUpon>Frm_Ocorrencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Ocorrencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Patrimonio.designer.vb">
+      <DependentUpon>Frm_Patrimonio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Patrimonio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Permissoes.designer.vb">
+      <DependentUpon>Frm_Permissoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Permissoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Pessoas_Ocorrencias.designer.vb">
+      <DependentUpon>Frm_Pessoas_Ocorrencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Pessoas_Ocorrencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Principal.designer.vb">
+      <DependentUpon>Frm_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Rlt_Anual.Designer.vb">
+      <DependentUpon>Frm_Rlt_Anual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Rlt_Anual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Status.designer.vb">
+      <DependentUpon>Frm_Status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Tarefas_User.designer.vb">
+      <DependentUpon>Frm_Tarefas_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Tarefas_User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Templo.designer.vb">
+      <DependentUpon>Frm_Templo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Templo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Usuarios.designer.vb">
+      <DependentUpon>Frm_Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Frm_Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Sobre.designer.vb">
+      <DependentUpon>Sobre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Sobre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA\Formularios\Splash.designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CA\Formularios\Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\ComboboxAutoComplete.designer.vb">
+      <DependentUpon>ComboboxAutoComplete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ComboboxAutoComplete.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CN\Controlador\ClsDados.vb" />
+    <Compile Include="CN\Negocios\clsAgenda.vb" />
+    <Compile Include="CN\Negocios\ClsAtas.vb" />
+    <Compile Include="CN\Negocios\ClsAvisos.vb" />
+    <Compile Include="CN\Negocios\ClsBanco.vb" />
+    <Compile Include="CN\Negocios\ClsCategorias.vb" />
+    <Compile Include="CN\Negocios\ClsClasseAlunos.vb" />
+    <Compile Include="CN\Negocios\ClsClasses.vb" />
+    <Compile Include="CN\Negocios\ClsDizimos.vb" />
+    <Compile Include="CN\Negocios\ClsEmprestimos.vb" />
+    <Compile Include="CN\Negocios\ClsEscolaDominical.vb" />
+    <Compile Include="CN\Negocios\ClsEventos.vb" />
+    <Compile Include="CN\Negocios\ClsFinanceiro.vb" />
+    <Compile Include="CN\Negocios\ClsFluxoCaixa.vb" />
+    <Compile Include="CN\Negocios\ClsForms.vb" />
+    <Compile Include="CN\Negocios\ClsFornecedores.vb" />
+    <Compile Include="CN\Negocios\ClsFornecimentos.vb" />
+    <Compile Include="CN\Negocios\ClsLivros.vb" />
+    <Compile Include="CN\Negocios\ClsMembros.vb" />
+    <Compile Include="CN\Negocios\ClsOcorrencias.vb" />
+    <Compile Include="CN\Negocios\ClsPatrimonio.vb" />
+    <Compile Include="CN\Negocios\ClsPermissoes.vb" />
+    <Compile Include="CN\Negocios\ClsProdutos.vb" />
+    <Compile Include="CN\Negocios\ClsStatus.vb" />
+    <Compile Include="CN\Negocios\ClsTarefas.vb" />
+    <Compile Include="CN\Negocios\ClsTemplo.vb" />
+    <Compile Include="CN\Negocios\ClsUsuarios.vb" />
+    <Compile Include="DS_Templo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Templo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Mdl_CaixaAlta.vb" />
+    <Compile Include="Modulos\mdl_Global.vb" />
+    <Compile Include="Modulos\Mdl_Registro.vb" />
+    <Compile Include="Modulos\Mdl_Strings_CR.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\msvcr100.dll">
+      <Link>SqlServerTypes\x64\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x64\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\msvcr100.dll">
+      <Link>SqlServerTypes\x86\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x86\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <EmbeddedResource Include="CA\Formularios\Frm_Agenda.resx">
+      <DependentUpon>Frm_Agenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Aniversariantes.resx">
+      <DependentUpon>Frm_Aniversariantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Bkp.resx">
+      <DependentUpon>Frm_Bkp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Classes.resx">
+      <DependentUpon>Frm_Classes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Controle_Atas.resx">
+      <DependentUpon>Frm_Controle_Atas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Dizimos.resx">
+      <DependentUpon>Frm_Dizimos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Empresta_Livro.resx">
+      <DependentUpon>Frm_Empresta_Livro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Escola_Dominical.resx">
+      <DependentUpon>Frm_Escola_Dominical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Eventos.resx">
+      <DependentUpon>Frm_Eventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Financeiro.resx">
+      <DependentUpon>Frm_Financeiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Fluxo_Caixa.resx">
+      <DependentUpon>Frm_Fluxo_Caixa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Fornecedores.resx">
+      <DependentUpon>Frm_Fornecedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Hinario.resx">
+      <DependentUpon>Frm_Hinario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Lista_Fluxo_Caixa.resx">
+      <DependentUpon>Frm_Lista_Fluxo_Caixa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Lista_Membros.resx">
+      <DependentUpon>Frm_Lista_Membros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Lista_Presencas.resx">
+      <DependentUpon>Frm_Lista_Presencas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Livros.resx">
+      <DependentUpon>Frm_Livros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Localizar.resx">
+      <DependentUpon>Frm_Localizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Localiza_Pais.resx">
+      <DependentUpon>Frm_Localiza_Pais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Login.resx">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Membros.resx">
+      <DependentUpon>Frm_Membros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Muda_Classe.resx">
+      <DependentUpon>Frm_Muda_Classe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Ocorrencias.resx">
+      <DependentUpon>Frm_Ocorrencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Patrimonio.resx">
+      <DependentUpon>Frm_Patrimonio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Permissoes.resx">
+      <DependentUpon>Frm_Permissoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Pessoas_Ocorrencias.resx">
+      <DependentUpon>Frm_Pessoas_Ocorrencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Principal.resx">
+      <DependentUpon>Frm_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Rlt_Anual.resx">
+      <DependentUpon>Frm_Rlt_Anual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Status.resx">
+      <DependentUpon>Frm_Status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Tarefas_User.resx">
+      <DependentUpon>Frm_Tarefas_User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Templo.resx">
+      <DependentUpon>Frm_Templo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Frm_Usuarios.resx">
+      <DependentUpon>Frm_Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Sobre.resx">
+      <DependentUpon>Sobre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA\Formularios\Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="CA\Relatorios\Rpt_Chamadas.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CA\Relatorios\Rpt_Chamada_Det1.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CA\Relatorios\Rpt_Chamada_Det2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CA\Relatorios\Rpt_Chamada_Det3.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CA\Relatorios\Rpt_EBD.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CA\Relatorios\Rpt_EBD_Det0.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CA\Relatorios\Rpt_EBD_Det1.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CA\Relatorios\Rpt_EBD_Det2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CA\Relatorios\Rpt_EBD_Det3.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CA\Relatorios\Rpt_EBD_Det4.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CA\Relatorios\Rpt_Pessoas.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CA\Relatorios\Rpt_Resumo_Anual.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Classes\ComboboxAutoComplete.resx">
+      <DependentUpon>ComboboxAutoComplete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DS_Templo.xsc">
+      <DependentUpon>DS_Templo.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Templo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Templo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DS_Templo.xss">
+      <DependentUpon>DS_Templo.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Templos_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alterar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empresta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Escola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fechamento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fornecedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fundo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impressora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Livros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permissao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\procura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vendas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vendas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SGT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Access.Database.Engine.2010">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Access database engine 2010 %28x86, x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.Office.Interop.Word">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="SqlServerTypes\Loader.cs">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="SqlServerTypes\readme.htm">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="SqlServerTypes\x64\msvcr100.dll">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="SqlServerTypes\x64\SqlServerSpatial110.dll">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="SqlServerTypes\x86\msvcr100.dll">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="SqlServerTypes\x86\SqlServerSpatial110.dll">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
