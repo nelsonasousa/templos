@@ -14,7 +14,7 @@ Public Class Frm_Escola_Dominical
 
     Public Sub SubreportProcessingEvent(ByVal sender As Object, ByVal e As SubreportProcessingEventArgs)
 
-        Try
+        'Try
             Dim ds_Subs As DataSet
             Dim Busca As New ClsDados
 
@@ -29,9 +29,9 @@ Public Class Frm_Escola_Dominical
             Next
 
 
-        Catch ex As Exception
-            MessageBox.Show(ex.Message, My.Application.Info.Title, MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+        'Catch ex As Exception
+         '   MessageBox.Show(ex.Message, My.Application.Info.Title, MessageBoxButtons.OK, MessageBoxIcon.Error)
+        'End Try
 
     End Sub
 
@@ -690,8 +690,6 @@ Public Class Frm_Escola_Dominical
 
             '//Constrói o relsatório num array de bytes
             Dim bytes As Byte() = rptv.LocalReport.Render("PDF", Nothing, mimeType, encoding, extension, streamids, warnings)
-
-
 
             '//cria o relatório no formato pdf na pasta da variável nome_arquivo
             Dim fs As New FileStream(nome_arquivo_pdf, FileMode.Create)

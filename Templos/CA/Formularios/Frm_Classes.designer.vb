@@ -30,6 +30,10 @@ Partial Class Frm_Classes
         Me.cmdExcluir = New System.Windows.Forms.Button()
         Me.cmdAlterar = New System.Windows.Forms.Button()
         Me.grpRegistro = New System.Windows.Forms.GroupBox()
+        Me.cboIDProfessor4 = New System.Windows.Forms.ComboBox()
+        Me.cboIDProfessor3 = New System.Windows.Forms.ComboBox()
+        Me.cboIDProfessor2 = New System.Windows.Forms.ComboBox()
+        Me.cboIDProfessor = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -40,22 +44,19 @@ Partial Class Frm_Classes
         Me.txtIDClasse = New System.Windows.Forms.TextBox()
         Me.txtClasse = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.cboIDProfessor = New System.Windows.Forms.ComboBox()
-        Me.cboIDProfessor2 = New System.Windows.Forms.ComboBox()
-        Me.cboIDProfessor3 = New System.Windows.Forms.ComboBox()
-        Me.cboIDProfessor4 = New System.Windows.Forms.ComboBox()
-        Me.grpBotoes.SuspendLayout()
-        Me.grpRegistro.SuspendLayout()
-        Me.SuspendLayout()
+        Me.grpBotoes.SuspendLayout
+        Me.grpRegistro.SuspendLayout
+        Me.SuspendLayout
         '
         'lblDigita
         '
         Me.lblDigita.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.lblDigita.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDigita.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblDigita.ForeColor = System.Drawing.Color.Blue
-        Me.lblDigita.Location = New System.Drawing.Point(0, 332)
+        Me.lblDigita.Location = New System.Drawing.Point(0, 409)
+        Me.lblDigita.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDigita.Name = "lblDigita"
-        Me.lblDigita.Size = New System.Drawing.Size(452, 23)
+        Me.lblDigita.Size = New System.Drawing.Size(603, 28)
         Me.lblDigita.TabIndex = 2
         Me.lblDigita.Text = "Label5"
         Me.lblDigita.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -67,83 +68,90 @@ Partial Class Frm_Classes
         Me.grpBotoes.Controls.Add(Me.cmdPesquisar)
         Me.grpBotoes.Controls.Add(Me.cmdExcluir)
         Me.grpBotoes.Controls.Add(Me.cmdAlterar)
-        Me.grpBotoes.Location = New System.Drawing.Point(12, 238)
+        Me.grpBotoes.Location = New System.Drawing.Point(16, 293)
+        Me.grpBotoes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpBotoes.Name = "grpBotoes"
-        Me.grpBotoes.Size = New System.Drawing.Size(426, 91)
+        Me.grpBotoes.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpBotoes.Size = New System.Drawing.Size(568, 112)
         Me.grpBotoes.TabIndex = 1
-        Me.grpBotoes.TabStop = False
+        Me.grpBotoes.TabStop = false
         '
         'cmdCancelar
         '
         Me.cmdCancelar.FlatAppearance.BorderSize = 0
         Me.cmdCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdCancelar.ForeColor = System.Drawing.Color.Red
         Me.cmdCancelar.Image = Global.Templos.My.Resources.Resources.limpar
-        Me.cmdCancelar.Location = New System.Drawing.Point(249, 9)
+        Me.cmdCancelar.Location = New System.Drawing.Point(332, 11)
+        Me.cmdCancelar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdCancelar.Name = "cmdCancelar"
-        Me.cmdCancelar.Size = New System.Drawing.Size(75, 76)
+        Me.cmdCancelar.Size = New System.Drawing.Size(100, 94)
         Me.cmdCancelar.TabIndex = 3
         Me.cmdCancelar.Text = "Limpar"
         Me.cmdCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmdCancelar.UseVisualStyleBackColor = True
+        Me.cmdCancelar.UseVisualStyleBackColor = true
         '
         'cmdIncluir
         '
         Me.cmdIncluir.FlatAppearance.BorderSize = 0
         Me.cmdIncluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdIncluir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdIncluir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdIncluir.Image = Global.Templos.My.Resources.Resources.incluir
-        Me.cmdIncluir.Location = New System.Drawing.Point(6, 9)
+        Me.cmdIncluir.Location = New System.Drawing.Point(8, 11)
+        Me.cmdIncluir.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdIncluir.Name = "cmdIncluir"
-        Me.cmdIncluir.Size = New System.Drawing.Size(75, 76)
+        Me.cmdIncluir.Size = New System.Drawing.Size(100, 94)
         Me.cmdIncluir.TabIndex = 0
         Me.cmdIncluir.Text = "&Incluir"
         Me.cmdIncluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmdIncluir.UseVisualStyleBackColor = True
+        Me.cmdIncluir.UseVisualStyleBackColor = true
         '
         'cmdPesquisar
         '
         Me.cmdPesquisar.FlatAppearance.BorderSize = 0
         Me.cmdPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdPesquisar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdPesquisar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdPesquisar.Image = Global.Templos.My.Resources.Resources.procura
-        Me.cmdPesquisar.Location = New System.Drawing.Point(334, 9)
+        Me.cmdPesquisar.Location = New System.Drawing.Point(445, 11)
+        Me.cmdPesquisar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdPesquisar.Name = "cmdPesquisar"
-        Me.cmdPesquisar.Size = New System.Drawing.Size(75, 76)
+        Me.cmdPesquisar.Size = New System.Drawing.Size(100, 94)
         Me.cmdPesquisar.TabIndex = 4
         Me.cmdPesquisar.Text = "&Pesquisar"
         Me.cmdPesquisar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmdPesquisar.UseVisualStyleBackColor = True
+        Me.cmdPesquisar.UseVisualStyleBackColor = true
         '
         'cmdExcluir
         '
         Me.cmdExcluir.FlatAppearance.BorderSize = 0
         Me.cmdExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdExcluir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdExcluir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdExcluir.ForeColor = System.Drawing.Color.Red
         Me.cmdExcluir.Image = Global.Templos.My.Resources.Resources.excluir
-        Me.cmdExcluir.Location = New System.Drawing.Point(168, 9)
+        Me.cmdExcluir.Location = New System.Drawing.Point(224, 11)
+        Me.cmdExcluir.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdExcluir.Name = "cmdExcluir"
-        Me.cmdExcluir.Size = New System.Drawing.Size(75, 76)
+        Me.cmdExcluir.Size = New System.Drawing.Size(100, 94)
         Me.cmdExcluir.TabIndex = 2
         Me.cmdExcluir.Text = "&Excluir"
         Me.cmdExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmdExcluir.UseVisualStyleBackColor = True
+        Me.cmdExcluir.UseVisualStyleBackColor = true
         '
         'cmdAlterar
         '
         Me.cmdAlterar.FlatAppearance.BorderSize = 0
         Me.cmdAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdAlterar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAlterar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdAlterar.Image = Global.Templos.My.Resources.Resources.alterar
-        Me.cmdAlterar.Location = New System.Drawing.Point(87, 9)
+        Me.cmdAlterar.Location = New System.Drawing.Point(116, 11)
+        Me.cmdAlterar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdAlterar.Name = "cmdAlterar"
-        Me.cmdAlterar.Size = New System.Drawing.Size(75, 76)
+        Me.cmdAlterar.Size = New System.Drawing.Size(100, 94)
         Me.cmdAlterar.TabIndex = 1
         Me.cmdAlterar.Text = "&Alterar"
         Me.cmdAlterar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmdAlterar.UseVisualStyleBackColor = True
+        Me.cmdAlterar.UseVisualStyleBackColor = true
         '
         'grpRegistro
         '
@@ -161,78 +169,131 @@ Partial Class Frm_Classes
         Me.grpRegistro.Controls.Add(Me.txtIDClasse)
         Me.grpRegistro.Controls.Add(Me.txtClasse)
         Me.grpRegistro.Controls.Add(Me.Label1)
-        Me.grpRegistro.Location = New System.Drawing.Point(12, 6)
+        Me.grpRegistro.Location = New System.Drawing.Point(16, 7)
+        Me.grpRegistro.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpRegistro.Name = "grpRegistro"
-        Me.grpRegistro.Size = New System.Drawing.Size(426, 226)
+        Me.grpRegistro.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpRegistro.Size = New System.Drawing.Size(568, 278)
         Me.grpRegistro.TabIndex = 0
-        Me.grpRegistro.TabStop = False
+        Me.grpRegistro.TabStop = false
         Me.grpRegistro.Text = "Registro:"
+        '
+        'cboIDProfessor4
+        '
+        Me.cboIDProfessor4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cboIDProfessor4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cboIDProfessor4.FormattingEnabled = true
+        Me.cboIDProfessor4.Location = New System.Drawing.Point(123, 188)
+        Me.cboIDProfessor4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboIDProfessor4.Name = "cboIDProfessor4"
+        Me.cboIDProfessor4.Size = New System.Drawing.Size(347, 24)
+        Me.cboIDProfessor4.TabIndex = 11
+        '
+        'cboIDProfessor3
+        '
+        Me.cboIDProfessor3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cboIDProfessor3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cboIDProfessor3.FormattingEnabled = true
+        Me.cboIDProfessor3.Location = New System.Drawing.Point(123, 155)
+        Me.cboIDProfessor3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboIDProfessor3.Name = "cboIDProfessor3"
+        Me.cboIDProfessor3.Size = New System.Drawing.Size(347, 24)
+        Me.cboIDProfessor3.TabIndex = 9
+        '
+        'cboIDProfessor2
+        '
+        Me.cboIDProfessor2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cboIDProfessor2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cboIDProfessor2.FormattingEnabled = true
+        Me.cboIDProfessor2.Location = New System.Drawing.Point(123, 122)
+        Me.cboIDProfessor2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboIDProfessor2.Name = "cboIDProfessor2"
+        Me.cboIDProfessor2.Size = New System.Drawing.Size(347, 24)
+        Me.cboIDProfessor2.TabIndex = 7
+        '
+        'cboIDProfessor
+        '
+        Me.cboIDProfessor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cboIDProfessor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cboIDProfessor.FormattingEnabled = true
+        Me.cboIDProfessor.Location = New System.Drawing.Point(123, 89)
+        Me.cboIDProfessor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboIDProfessor.Name = "cboIDProfessor"
+        Me.cboIDProfessor.Size = New System.Drawing.Size(347, 24)
+        Me.cboIDProfessor.TabIndex = 5
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(5, 156)
+        Me.Label5.AutoSize = true
+        Me.Label5.Location = New System.Drawing.Point(7, 192)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(81, 13)
+        Me.Label5.Size = New System.Drawing.Size(106, 17)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Responsável 4:"
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(5, 129)
+        Me.Label4.AutoSize = true
+        Me.Label4.Location = New System.Drawing.Point(7, 159)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(81, 13)
+        Me.Label4.Size = New System.Drawing.Size(106, 17)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Responsável 3:"
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(5, 102)
+        Me.Label3.AutoSize = true
+        Me.Label3.Location = New System.Drawing.Point(7, 126)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(81, 13)
+        Me.Label3.Size = New System.Drawing.Size(106, 17)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Responsável 2:"
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(5, 75)
+        Me.Label2.AutoSize = true
+        Me.Label2.Location = New System.Drawing.Point(7, 92)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(81, 13)
+        Me.Label2.Size = New System.Drawing.Size(106, 17)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Responsável 1:"
         '
         'txtEscola
         '
-        Me.txtEscola.AutoSize = True
+        Me.txtEscola.AutoSize = true
         Me.txtEscola.CheckAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.txtEscola.Checked = True
+        Me.txtEscola.Checked = true
         Me.txtEscola.CheckState = System.Windows.Forms.CheckState.Checked
         Me.txtEscola.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.txtEscola.Location = New System.Drawing.Point(92, 180)
+        Me.txtEscola.Location = New System.Drawing.Point(123, 222)
+        Me.txtEscola.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtEscola.Name = "txtEscola"
-        Me.txtEscola.Size = New System.Drawing.Size(113, 17)
+        Me.txtEscola.Size = New System.Drawing.Size(332, 21)
         Me.txtEscola.TabIndex = 12
-        Me.txtEscola.Text = "Escola Dominical?"
+        Me.txtEscola.Text = "Sair na Lista de Chamada da Escola Dominical?"
         Me.txtEscola.TextAlign = System.Drawing.ContentAlignment.TopRight
-        Me.txtEscola.UseVisualStyleBackColor = True
+        Me.txtEscola.UseVisualStyleBackColor = true
         '
         'txtDataCriacao
         '
         Me.txtDataCriacao.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.txtDataCriacao.Location = New System.Drawing.Point(92, 46)
+        Me.txtDataCriacao.Location = New System.Drawing.Point(123, 57)
+        Me.txtDataCriacao.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDataCriacao.Name = "txtDataCriacao"
-        Me.txtDataCriacao.Size = New System.Drawing.Size(100, 20)
+        Me.txtDataCriacao.Size = New System.Drawing.Size(132, 22)
         Me.txtDataCriacao.TabIndex = 3
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(14, 50)
+        Me.Label6.AutoSize = true
+        Me.Label6.Location = New System.Drawing.Point(19, 62)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(72, 13)
+        Me.Label6.Size = New System.Drawing.Size(94, 17)
         Me.Label6.TabIndex = 2
         Me.Label6.Text = "Data Criação:"
         '
@@ -240,92 +301,56 @@ Partial Class Frm_Classes
         '
         Me.txtIDClasse.BackColor = System.Drawing.SystemColors.Control
         Me.txtIDClasse.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtIDClasse.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIDClasse.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.txtIDClasse.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtIDClasse.Location = New System.Drawing.Point(293, 215)
+        Me.txtIDClasse.Location = New System.Drawing.Point(391, 265)
+        Me.txtIDClasse.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtIDClasse.Name = "txtIDClasse"
-        Me.txtIDClasse.Size = New System.Drawing.Size(49, 13)
+        Me.txtIDClasse.Size = New System.Drawing.Size(65, 16)
         Me.txtIDClasse.TabIndex = 13
-        Me.txtIDClasse.Visible = False
+        Me.txtIDClasse.Visible = false
         '
         'txtClasse
         '
-        Me.txtClasse.Location = New System.Drawing.Point(92, 19)
+        Me.txtClasse.Location = New System.Drawing.Point(123, 23)
+        Me.txtClasse.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtClasse.MaxLength = 0
         Me.txtClasse.Name = "txtClasse"
-        Me.txtClasse.Size = New System.Drawing.Size(261, 20)
+        Me.txtClasse.Size = New System.Drawing.Size(347, 22)
         Me.txtClasse.TabIndex = 1
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(45, 22)
+        Me.Label1.AutoSize = true
+        Me.Label1.Location = New System.Drawing.Point(60, 27)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 13)
+        Me.Label1.Size = New System.Drawing.Size(54, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Classe:"
         '
-        'cboIDProfessor
-        '
-        Me.cboIDProfessor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.cboIDProfessor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.cboIDProfessor.FormattingEnabled = True
-        Me.cboIDProfessor.Location = New System.Drawing.Point(92, 72)
-        Me.cboIDProfessor.Name = "cboIDProfessor"
-        Me.cboIDProfessor.Size = New System.Drawing.Size(261, 21)
-        Me.cboIDProfessor.TabIndex = 5
-        '
-        'cboIDProfessor2
-        '
-        Me.cboIDProfessor2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.cboIDProfessor2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.cboIDProfessor2.FormattingEnabled = True
-        Me.cboIDProfessor2.Location = New System.Drawing.Point(92, 99)
-        Me.cboIDProfessor2.Name = "cboIDProfessor2"
-        Me.cboIDProfessor2.Size = New System.Drawing.Size(261, 21)
-        Me.cboIDProfessor2.TabIndex = 7
-        '
-        'cboIDProfessor3
-        '
-        Me.cboIDProfessor3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.cboIDProfessor3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.cboIDProfessor3.FormattingEnabled = True
-        Me.cboIDProfessor3.Location = New System.Drawing.Point(92, 126)
-        Me.cboIDProfessor3.Name = "cboIDProfessor3"
-        Me.cboIDProfessor3.Size = New System.Drawing.Size(261, 21)
-        Me.cboIDProfessor3.TabIndex = 9
-        '
-        'cboIDProfessor4
-        '
-        Me.cboIDProfessor4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.cboIDProfessor4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.cboIDProfessor4.FormattingEnabled = True
-        Me.cboIDProfessor4.Location = New System.Drawing.Point(92, 153)
-        Me.cboIDProfessor4.Name = "cboIDProfessor4"
-        Me.cboIDProfessor4.Size = New System.Drawing.Size(261, 21)
-        Me.cboIDProfessor4.TabIndex = 11
-        '
         'Frm_Classes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8!, 16!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(452, 355)
+        Me.ClientSize = New System.Drawing.Size(603, 437)
         Me.Controls.Add(Me.lblDigita)
         Me.Controls.Add(Me.grpBotoes)
         Me.Controls.Add(Me.grpRegistro)
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MaximizeBox = false
+        Me.MinimizeBox = false
         Me.Name = "Frm_Classes"
-        Me.ShowIcon = False
-        Me.ShowInTaskbar = False
+        Me.ShowIcon = false
+        Me.ShowInTaskbar = false
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cadastro de Departamentos."
-        Me.grpBotoes.ResumeLayout(False)
-        Me.grpRegistro.ResumeLayout(False)
-        Me.grpRegistro.PerformLayout()
-        Me.ResumeLayout(False)
+        Me.grpBotoes.ResumeLayout(false)
+        Me.grpRegistro.ResumeLayout(false)
+        Me.grpRegistro.PerformLayout
+        Me.ResumeLayout(false)
 
-    End Sub
+End Sub
     Friend WithEvents lblDigita As System.Windows.Forms.Label
     Friend WithEvents grpBotoes As System.Windows.Forms.GroupBox
     Friend WithEvents cmdCancelar As System.Windows.Forms.Button
