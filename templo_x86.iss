@@ -1,5 +1,5 @@
 [Setup]
-OutputDir=D:\Instaladores Gerente\Templos
+OutputDir=E:\Instaladores Gerente\Templos
 OutputBaseFilename=Setup_Templos_x86
 AppCopyright=Methodus Tecnologia (Sistema Gratuito)
 AppName=Methodus Templos
